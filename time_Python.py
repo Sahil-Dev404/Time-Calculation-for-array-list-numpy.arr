@@ -16,7 +16,7 @@ for x in lst:
     s += x
 
 end=time.perf_counter()
-print(f"List Time: {end-start} seconds")
+print(f"List Time: {end-start:.4f} seconds")
 
 #for the array time calculation 
 start=time.perf_counter()
@@ -31,7 +31,7 @@ for x in arr:
     s += x
 
 end=time.perf_counter()
-print(f"Array Time: {end-start} seconds")
+print(f"Array Time: {end-start:.4f} seconds")
 
 
 #using the numpy libraries 
@@ -41,4 +41,4 @@ np_arr=np.arange(N, dtype=np.int64)
 s=np_arr.sum()
 
 end=time.perf_counter()
-print(f"Numpy array time: {end-start} seconds")
+print(f"Numpy array time: {end-start:.4f} seconds")
